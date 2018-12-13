@@ -9,7 +9,7 @@ var addTwo;
 module.exports = {
     name: 'matchupultimate',
     description: 'Shows matchups for Smash Ultimate. Make sure the character is one word, e.x. toonlink. Neutral is .',
-    aliases: ['muu', 'mu5', 'muultimate', 'muult'],
+    aliases: ['muu', 'mu5', 'muultimate', 'muult', 'matchupu', 'matchupult'],
     usage: '<character playing as> <character playing against>',
     cooldown: 5,
     args: true,
