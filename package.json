@@ -1,16 +1,27 @@
 {
-    "name": "DankerBot",
-    "version": "1.0.0",
-    "description": "Dankers Bot",
-    "main": "bot.js",
-    "author": "Danker",
-    "dependencies": {
-        "discord.io": "^2.5.3",
-        "discord.js": "^11.4.2",
-        "eslint": "^5.9.0",
-        "node-fetch": "^2.3.0",
-        "weather-js": "^2.0.0",
-        "winston": "^3.1.0",
-        "xlsx": "^0.14.1"
-    }
+  "name": "dankerbot",
+  "version": "1.0.0",
+  "description": "Dankers Bot",
+  "main": "bot.js",
+  "author": "Danker",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^11.4.2",
+    "eslint": "^5.9.0",
+    "node-fetch": "^2.3.0",
+    "weather-js": "^2.0.0",
+    "winston": "^3.1.0",
+    "xlsx": "^0.14.1",
+    "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "8.9.1"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  }
 }
