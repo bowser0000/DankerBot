@@ -61,7 +61,6 @@ for (const file of commandFiles) {
 }
 
 client.on('message', message => {
-  if(message.author.bot) return;
   if (message.content.includes('bayonetta')) message.react('🤢');
   if (!message.content.startsWith(prefix) || message.author.bot) return;
   var args = message.content.slice(prefix.length).split(/ +/);
