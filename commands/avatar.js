@@ -1,4 +1,4 @@
-module.exports = {
+  module.exports = {
     name: 'avatar',
     description: 'Gives a link to one or more mentioned user\'s avatar, or yours if no one is mentioned.',
     aliases: ['icon', 'pfp', 'ava'],
