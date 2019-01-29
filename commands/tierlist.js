@@ -5,7 +5,7 @@ module.exports = {
     usage: '<64/melee/sillymelee/brawl/brawlminus/projectm/4/ultimate>',
     cooldown: 5,
     execute(message, args) {
-        if (!args.length) return message.channel.send('You didn\'t specify a Smash game! (64/melee/sillymelee/brawl/brawlminus/projectm/4)');
+        if (!args.length) return message.channel.send('You didn\'t specify a Smash game! (64/melee/sillymelee/brawl/brawlminus/projectm/4/ssf2/ultimate)');
         switch(args[0].toLowerCase()) {
             case '64':
                 message.channel.send({file: 'tierlists/64tl.png'});
@@ -37,10 +37,17 @@ module.exports = {
             case '4':
                 message.channel.send({file: 'tierlists/4tl.png'});
                 break;
+            case 'ssf2':
+            case 'smashflash2':
+            case' supersmashflash2':
+            case 'flash2':
+            case 'f2':
+                message.channel.send({file: 'tierlists/ssf2tl.png'});
+                break;
             case 'ultimate':
             case 'u':
             case '5':
-                message.channel.send('This tier list is not an official tier list. It was made by averaging the tier lists from pro players. Last updated: 01/16/2019', {file: 'tierlists/ultimatetl.png'});
+                message.channel.send('This tier list is not an official tier list. It was made by averaging the tier lists from pro players. Last updated: 01/29/2019', {file: 'tierlists/ultimatetl.png'});
                 break;
             default:
                 message.channel.send('You didn\'t specify a Smash game! (64/melee/brawl/brawlminus/projectm/4/ultimate)');
