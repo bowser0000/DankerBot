@@ -1,3 +1,5 @@
+const ownerID = process.env.ownerID;
+
 module.exports = {
     name: 'nick',
     description: 'Changes your\'s or someone\'s nickname.',
