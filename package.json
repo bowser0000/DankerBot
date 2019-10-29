@@ -8,11 +8,11 @@
     "discord.io": "^2.5.3",
     "discord.js": "github:discordjs/discord.js",
     "eslint": "^5.9.0",
+    "express": "^4.17.1",
     "node-fetch": "^2.3.0",
     "weather-js": "^2.0.0",
     "winston": "^3.1.0",
-    "xlsx": "^0.14.1",
-    "express": "^4.16.4"
+    "xlsx": "^0.14.1"
   },
   "engines": {
     "node": "10.15.3"

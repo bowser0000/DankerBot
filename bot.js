@@ -42,8 +42,6 @@ client.once('ready', () => {
   console.log('In ' + client.channels.size + ' channels!');
   console.log('Serving ' + client.users.size + ' users!');
   console.log('----------------------');
-  console.log('In servers: ' + client.guilds.array().join('\n'));
-  console.log('----------------------');
   client.user.setActivity(prefix + 'help', { type: 'PLAYING' });
 });
 
@@ -93,7 +91,7 @@ client.on('message', message => {
     if (message.guild === null) {
       console.log(commandName + ', in: DMs');
     } else {
-      console.log(commandName + ', in: ' + message.guild);
+      console.log(commandName + ', in: ' + message.guild.name);
     }
     command.execute(message, args);
   }
