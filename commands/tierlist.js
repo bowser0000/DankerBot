@@ -1,5 +1,3 @@
-const { MessageAttachment } = require('discord.js');
-
 module.exports = {
     name: 'tierlist',
     description: 'Sends the tier list of the specified Smash game. Shortcuts are m, smelee, sillym, sm, b, brawl-, bm, b-, pm, f2, u, 5.',
