@@ -49,7 +49,7 @@ module.exports = {
             case 'ultimate':
             case 'u':
             case '5':
-                message.channel.send('This tier list is not an official tier list. It was made by averaging the tier lists from pro players. Last updated: 07/19/2019', {files: ['tierlists/ultimatetl.png']});
+                message.channel.send('This tier list is not an official tier list. It was made by averaging the tier lists from pro players. Last updated: 10/29/2019 (Does not include Terry)', {files: ['tierlists/ultimatetl.png']});
                 break;
             default:
                 message.channel.send('You didn\'t specify a Smash game! (64/melee/brawl/brawlminus/projectm/4/ultimate)');
