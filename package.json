@@ -6,7 +6,7 @@
     "author": "Danker",
     "dependencies": {
         "discord.io": "^2.5.3",
-        "discord.js": "^11.4.2",
+        "discord.js": "github:discordjs/discord.js",
         "eslint": "^5.9.0",
         "node-fetch": "^2.3.0",
         "weather-js": "^2.0.0",
