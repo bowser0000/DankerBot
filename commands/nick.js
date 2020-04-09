@@ -8,7 +8,7 @@ module.exports = {
     execute(message, args) {
         var taggedUser = message.mentions.members.first();
         var changeTo;
-        if (taggedUser.highestRole.position >= message.member.highestRole.position) return message.reply('you cannot change this person\'s nickname!');
+        if (taggedUser.roles.highest.position >= message.member.roles.highest.position) return message.reply('you cannot change this person\'s nickname!');
         if (!taggedUser) {
             if (!message.member.hasPermission('CHANGE_NICKNAME')) return message.reply('you don\'t have permission to do this!');
             changeTo = args.slice(0).join(' ');

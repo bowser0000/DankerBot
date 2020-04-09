@@ -38,9 +38,9 @@ const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('
 
 client.once('ready', () => {
   console.log('Ready!');
-  console.log('On ' + client.guilds.size + ' servers!');
-  console.log('In ' + client.channels.size + ' channels!');
-  console.log('Serving ' + client.users.size + ' users!');
+  console.log('On ' + client.guilds.cache.size + ' servers!');
+  console.log('In ' + client.channels.cache.size + ' channels!');
+  console.log('Serving ' + client.users.cache.size + ' users!');
   console.log('----------------------');
   client.user.setActivity(prefix + 'help', { type: 'PLAYING' });
 });

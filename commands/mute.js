@@ -7,9 +7,9 @@ module.exports = {
         var taggedUser = message.guild.member(message.mentions.members.first());
         if (!taggedUser) return message.reply('mention a user to mute!');
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply('you don\'t have permission to do this!');
-        if (taggedUser.highestRole.position >= message.member.highestRole.position) return message.reply('you cannot mute this person!');
-        var muteRole = message.guild.roles.find(role => role.name === 'Muted');
-        if (taggedUser.roles.some(role => role.name === 'Muted')) return message.reply(`${taggedUser.user.tag} is already muted!`);
+        if (taggedUser.roles.highest.position >= message.member.roles.highest.position) return message.reply('you cannot mute this person!');
+        var muteRole = message.guild.roles.cache.find(role => role.name === 'Muted');
+        if (taggedUser.roles.cache.some(role => role.name === 'Muted')) return message.reply(`${taggedUser.user.tag} is already muted!`);
         async function mutedRole() {
             if (!muteRole) {
                 try {
@@ -29,8 +29,8 @@ module.exports = {
                     console.log(e.stack);
                 }
             }
-            if (taggedUser.roles.some(role => role.name === 'Muted')) return message.reply(`${taggedUser.user.tag} is already muted!`);
-            await (taggedUser.addRole(muteRole.id));
+            if (taggedUser.roles.cache.some(role => role.name === 'Muted')) return message.reply(`${taggedUser.user.tag} is already muted!`);
+            await (taggedUser.roles.add(muteRole.id));
             message.channel.send(`<@${taggedUser.id}> was muted!`);
         }
         mutedRole();

@@ -4,9 +4,9 @@
     aliases: ['icon', 'pfp', 'ava'],
     usage: '<mentioned users>',
     execute(message) {
-        if(!message.mentions.users.size) return message.channel.send(`Your avatar: ${message.author.displayAvatarURL}`);
+        if(!message.mentions.users.size) return message.channel.send(`Your avatar: ${message.author.avatarURL('png')}`);
         var avatarList = message.mentions.users.map(user => {
-            return `${user.username}'s avatar: ${user.displayAvatarURL}`;
+            return `${user.username}'s avatar: ${user.avatarURL('png')}`;
         });
         message.channel.send(avatarList);
     },
